@@ -29,7 +29,7 @@ jobs:
       - name: build and release to DockerHub
         env:
           NAME: ansoo97
-          REPO: gitaction
+          REPO: goapplication
         run: |
           docker build -t $REPO .
           docker tag $REPO:latest $NAME/$REPO:latest
